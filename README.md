@@ -12,4 +12,6 @@ Because my project required an airtight container, I added a temperature sensor 
 If the temperature is 50 degrees or over a red LED will turn on.  
 The screen displays current temperature, On/Off time interval in minutes and Shows whether cycling is On or Off.
 
+![image](https://user-images.githubusercontent.com/86169204/181357887-b378ddd8-1c05-4222-ac55-8f99898fbcfd.png)
+
 You can find a hoock up diagram in the Diagram folder. The pdf version of the diagram has notations that show which part of the circuit does what.
