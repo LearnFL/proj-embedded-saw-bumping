@@ -1,9 +1,5 @@
-// THIS SOFTWARE HAS BEEN WRITTEN BY DENNIS ROTNOV
-// INITIAL DRAFT, REQUIRES A TUNE UP
-// 5-4-22 Updated bounceButtonTimer(600) old value was 300 to address static or floating voltage
-// 5-5-22 Updated Selector and Activator functions to fix static and false signals by checking after a delay if the button is pressed. Should have done this on 5/4/22
-// 5-5-22 bounceButtonTimer(400)
-// 5-11-22 Updated tempConversion = ((tempReading/205)*100)-50 since used new sensor for TMP36
+// THIS SOFTWARE HAS BEEN DESIGNED AND BUILT BY DENNIS ROTNOV
+// tempConversion = ((tempReading/205)*100)-50 since used new sensor for TMP36
 
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -12,20 +8,20 @@
 
 #define SCREEN_WIDTH 128  // OLED display width,  in pixels
 #define SCREEN_HEIGHT 64  // OLED display height, in pixels
-#define selectorButton 2  // Solenoid timer selector pin
-#define solenoidOutput 12 // Gives power to solenoid driver board, controlled by a timer if Pin3 has been activated
+#define selectorButton 2  // Solenoid time interval selector pin
+#define solenoidOutput 12 // Gives power to solenoid drive board if Pin3 has been activated 
 #define activatorButton 3 // Activates or deactivates solenoid
 #define tempLED 7         // Red LED for temperature alert
 
 float tempReading;
 float tempConversion;
-const int tempPin = A1;    // Temperature sensor Pin
+const int tempPin = A1;              // Temperature sensor Pin
 volatile uint8_t buttonState = 0;    // Reads button state
 volatile uint8_t activatorFlag = 0;  // Tracks botton on pin 3
 char* status[] = {"OFF", "ON"};      // Read out on the screen controlled by activity on Pin 3
 
-noDelay bounceButtonTimer(400);      // None blovcing delay for a button debounce
-noDelay temperatureTimer(3000);      // None blovcing delay for a button debounce
+noDelay bounceButtonTimer(400);      // None blocking delay for a button debounce
+noDelay temperatureTimer(3000);      // None blocking delay for a button debounce
 
 Adafruit_SSD1306 oled(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1); // declare an SSD1306 display object connected to I2C
 
@@ -81,7 +77,7 @@ void updateSelector(){
 
 //Function updates OLED screen and calls solenoid function
 void screenUpdate(int buttonState){
-  int i;
+  int i;  // Should probably initialize to a value
   if (activatorFlag == 1){
     i = 1;
   }
@@ -127,7 +123,8 @@ void solenoid(){
     digitalWrite(solenoidOutput, HIGH);
     delay(3000);
     digitalWrite(solenoidOutput, LOW);
-    // For loop is used to perform multiple temperature checks during DELAY function, this way temperature is checked more often
+    // While solenoid is off, for loop will break  DELAY 15 times to perform temperature checks 
+    // this way temperature is checked more often, that is a sefety feature
     for (int i=0; i<15; i++){
       temperatureSensor();   
       delay((buttonState*60000)/15);    // 60000 milli seconds in each minute
@@ -150,7 +147,7 @@ void temperatureSensor(){
     digitalWrite(tempLED, 0);
   }
 
-  // Used to display temperature on OLED
+  // Used to display temperature on OLED, should consider initializing i to a value inside of a function
   int i;
   if (activatorFlag == 1){
     i = 1;
