@@ -11,3 +11,5 @@ The solenoid stays on for 3 seconds. You may consider using an encoder if you wa
 Because my project required an airtight container, I added a temperature sensor TMP36 and a thermal fuse. The formula in the code calculates the temperature in Celsius.
 If the temperature is 50 degrees or over a red LED will turn on.  
 The screen displays current temperature, On/Off time interval in minutes and Shows whether cycling is On or Off.
+
+You can find a hoock up diagram in the Diagram folder. The pdf version of the diagram has notations that show which part of the circuit does what.
