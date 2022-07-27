@@ -1,20 +1,21 @@
 * Netlist created with www.circuit-diagram.org
 * UNO HOOCK UP
-D1 0 1
-'microcontroller #1:0 #0:1 header=Solenoid sz=4 p0=. p1=. p2= p3= p4= p5= p6= p7= p8= p9= p10= p11= p12= p13= p14= p15= p16= p17= p18= p19= p20= p21= p22= p23= p24= p25= p26= p27= p28= p29= p30= p31= p32= p33= p34= p35= p36= p37= p38= p39=
-V2 2 0
-R3 3 4 1000
-R4 2 3 10000
-'mosfetn drn:0 gate:5 t=NChannelMosfet
-V5 6 0
-V6 7 0
-'microcontroller #1:8 #2:9 #3:5 header=Temp Sensor sz=6 p0= p1=out p2=vcc p3=gnd p4= p5= p6= p7= p8= p9= p10= p11= p12= p13= p14= p15= p16= p17= p18= p19= p20= p21= p22= p23= p24= p25= p26= p27= p28= p29= p30= p31= p32= p33= p34= p35= p36= p37= p38= p39=
-'pushswitch a:5 b:12 t=Push closed=False
+V1 1 0 5
+D2 2 1
+'microcontroller #0:1 #1:2 header=Solenoid sz=4 p0=. p1=. p2= p3= p4= p5= p6= p7= p8= p9= p10= p11= p12= p13= p14= p15= p16= p17= p18= p19= p20= p21= p22= p23= p24= p25= p26= p27= p28= p29= p30= p31= p32= p33= p34= p35= p36= p37= p38= p39=
+V3 3 0
+R4 4 5 1000
+R5 3 4 10000
+'mosfetn drn:2 gate:0 t=NChannelMosfet
+V6 6 0
+V7 7 0
+'microcontroller #1:8 #2:9 #3:0 header=Temp Sensor sz=6 p0= p1=out p2=vcc p3=gnd p4= p5= p6= p7= p8= p9= p10= p11= p12= p13= p14= p15= p16= p17= p18= p19= p20= p21= p22= p23= p24= p25= p26= p27= p28= p29= p30= p31= p32= p33= p34= p35= p36= p37= p38= p39=
+'pushswitch a:0 b:12 t=Push closed=False
 'pushswitch b:6 a:13 t=Push closed=False
-R7 14 5 220
-D8 15 14
-'microcontroller #0:10 #1:11 #3:16 #2:5 header=OLED sz=4 p0=SCL p1=SDI p2=GND p3=VCC p4= p5= p6= p7= p8= p9= p10= p11= p12= p13= p14= p15= p16= p17= p18= p19= p20= p21= p22= p23= p24= p25= p26= p27= p28= p29= p30= p31= p32= p33= p34= p35= p36= p37= p38= p39=
+R8 14 0 220
+D9 15 14
+'microcontroller #0:10 #1:11 #3:16 #2:0 header=OLED sz=4 p0=SCL p1=SDI p2=GND p3=VCC p4= p5= p6= p7= p8= p9= p10= p11= p12= p13= p14= p15= p16= p17= p18= p19= p20= p21= p22= p23= p24= p25= p26= p27= p28= p29= p30= p31= p32= p33= p34= p35= p36= p37= p38= p39=
 'pushswitch a:7 b:17 t=Push closed=False
-V9 5 0
-V10 1 5
-'Arduino Uno #8:8 #3:9 #26:12 #25:13 #21:15 #16:4 #6:1 #4:5 #2:16 #1:17
+V10 0 0
+V11 18 5
+'Arduino Uno #8:8 #3:9 #26:12 #25:13 #21:15 #16:5 #6:18 #4:0 #2:16 #1:17
