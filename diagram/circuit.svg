@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Circuit Diagram, cdlibrary.dll 4.0.0.0 -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1260" height="520" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" width="1000" height="520" xmlns="http://www.w3.org/2000/svg">
 	<line x1="190" y1="60" x2="230" y2="60" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
-	<line x1="1230" y1="330" x2="1230" y2="340" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<line x1="810" y1="470" x2="970" y2="470" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<line x1="970" y1="30" x2="970" y2="470" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<line x1="770" y1="30" x2="970" y2="30" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
