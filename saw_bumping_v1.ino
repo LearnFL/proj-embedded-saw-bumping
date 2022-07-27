@@ -1,4 +1,5 @@
 // THIS SOFTWARE HAS BEEN DESIGNED AND BUILT BY DENNIS ROTNOV
+// Please feel free to use and modify this, but keep the above information. Thanks!
 // tempConversion = ((tempReading/205)*100)-50 since used new sensor for TMP36
 
 #include <Wire.h>
