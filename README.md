@@ -9,9 +9,12 @@ This device has three buttons:
 
 The solenoid stays on for 3 seconds. You may consider using an encoder if you want to be able to adjust the duration.
 Because my project required an airtight container, I added a temperature sensor TMP36 and a thermal fuse. The formula in the code calculates the temperature in Celsius.
+
 If the temperature is 50 degrees or over a red LED will turn on.  
 The screen displays current temperature, On/Off time interval in minutes and Shows whether cycling is On or Off. I used mosfet IRF530, feel free to pick another one.
+
 I used one power supply for the solenoid and the board, that is why I had to use a separate circuit to lower the voltge for the board. 
+
 I let 'int i' to be default initialized inside of a function since it does not really affect the application, but it is not the right way, you should initialize it to any value othe then 0 or 1. I went a little bit heavy on button debouncing because of the environment in which that device is used, you may want to change it if you have to.
 
 ![5543A692-270B-4858-969C-36EAFAFA1407](https://user-images.githubusercontent.com/86169204/181370868-7294cdc6-5df6-4b01-b90c-5644bd8b1f71.JPEG)
