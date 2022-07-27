@@ -1,5 +1,5 @@
 This device controls a solenoid valve.
-It has been built for a very specific application, but one can easily change it or make it a part of a project where another application where a solenoid valve needs to be controlled.
+It has been built for a very specific application, but one can easily change it or make it a part of a project where a solenoid valve needs to be controlled.
 I used Arduino uno as I had it avaiable, but it is not the best choice as it takes up a lot of space.
 
 This device has three buttons:
