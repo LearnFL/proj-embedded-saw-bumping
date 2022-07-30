@@ -27,7 +27,7 @@ I let 'int i' to be default initialized inside of a function since it does not r
 
 ### Please feel free to use and modify the code but keep the first row where it says who built this.
 
-### [Visit myinstagram](www.instagram.com/dennis_r2018)
+### [Visit my instagram](www.instagram.com/dennis_r2018)
 
 ### Screenshots
 ![5543A692-270B-4858-969C-36EAFAFA1407](https://user-images.githubusercontent.com/86169204/181370868-7294cdc6-5df6-4b01-b90c-5644bd8b1f71.JPEG)
