@@ -20,6 +20,8 @@ The screen displays current temperature, On/Off time interval in minutes and sho
 
 I used one power supply for the solenoid and the board, that is why I had to use a separate circuit to lower the voltge for the board. 
 
+I used step bit to drill holes in the enclouser for the buttons and external usb. Must have easy usb access in case you need to change code.
+
 ### Consideration
 I let 'int i' to be default initialized inside of a function since it does not really affect the application, but it is not the right way, you should initialize it to any value othe then 0 or 1. I went a little bit heavy on a button debouncing because of the environment in which that device is used, you may want to change it if you have to.
 
